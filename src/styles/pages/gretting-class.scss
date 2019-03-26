@@ -1,1 +1,14 @@
 @import '../_base.scss';
+
+.display-name {
+  margin-top: $common-size * 2;
+  padding: ($common-size - 6) $common-size;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    padding-top: $common-size;
+  }
+}

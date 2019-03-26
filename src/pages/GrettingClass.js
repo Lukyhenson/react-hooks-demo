@@ -8,8 +8,8 @@ class GrettingClass extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      name: '',
-      surname: '',
+      name: 'Mary',
+      surname: 'Jane',
       width: window.innerWidth,
     }
 
@@ -50,17 +50,25 @@ class GrettingClass extends React.Component {
 
   render() {
     return (
-      <section>
-        <Row label="name">
-          <input type="text" onChange={this.handleChangeName} />
-        </Row>
-        <Row label="surname">
-          <input type="text" onChange={this.handleChangeSurname} />
-        </Row>
-        <Row label="width">
-          {this.state.width}
-        </Row>
-      </section>
+      <React.Fragment>
+        <section>
+          <Row label="name">
+            <input type="text" value={this.state.name} onChange={this.handleChangeName} />
+          </Row>
+          <Row label="surname">
+            <input type="text" value={this.state.surname} onChange={this.handleChangeSurname} />
+          </Row>
+          <Row label="width">
+            {this.state.width}
+          </Row>
+        </section>
+
+        <div className="display-name">
+          <Row>
+            The current name is <strong><i>{`${this.state.name} ${this.state.surname}`}</i></strong>!
+          </Row>
+        </div>
+      </React.Fragment>
     )
   }
 }

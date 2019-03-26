@@ -2,7 +2,7 @@
 
 .root {
   background-color: $dark;
-  height: 100vh;
+  height: 100%;
   color: $white;
 
   &__title {
@@ -19,7 +19,16 @@
 
   &__exemplo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @media (max-width: 900px) {
+    &__exemplo {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
   }
 
   &__container {
@@ -39,7 +48,7 @@
 
   section {
     background-color: $limon-green;
-    padding: ($common-size + 4) 30px;
+    padding: 20px 15px;
     box-shadow: 7px 10px $dark-blue;
   }
 }
