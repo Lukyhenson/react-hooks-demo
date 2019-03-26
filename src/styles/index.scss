@@ -27,14 +27,25 @@
     height: 100vh - 20vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+
+    &__title {
+      color: $grey;
+      font-weight: bolder;
+      padding-bottom: $common-size;
+    }
   }
 
   section {
     background-color: $limon-green;
-    padding: $common-size;
+    padding: ($common-size + 4) 30px;
     box-shadow: 7px 10px $dark-blue;
   }
+}
+
+.root .root__container {
+  border-right: 1px solid #272f31;
 }
 
 h1 {

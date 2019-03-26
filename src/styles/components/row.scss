@@ -1,0 +1,25 @@
+@import '../_base.scss';
+
+.row {
+  padding: $common-size 0;
+  &__label {
+    color: $dark;
+    font-size: $common-size;
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+
+  &__children {
+    padding-bottom: $common-size;
+    color: $dark-blue;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  &__children > input {
+    background-color: $limon-green-light;
+    border: none;
+    height: 35px;
+    padding-left: 10px;
+  }
+}
