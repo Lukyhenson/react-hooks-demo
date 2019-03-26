@@ -1,3 +1,4 @@
+import '../styles/pages/gretting-hooks.scss'
 import React from 'react'
 
 function GrettingHook(props) {

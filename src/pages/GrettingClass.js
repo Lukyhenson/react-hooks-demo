@@ -1,3 +1,4 @@
+import '../styles/pages/gretting-class.scss'
 import React from 'react'
 
 class GrettingClass extends React.Component {
